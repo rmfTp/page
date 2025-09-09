@@ -1,0 +1,198 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+.clear::after{
+	content:''; display:block; clear:both; width:0; height:0; visibility:hidden;
+}
+body{width:100%; color:#333;}
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+.wrap{width:1200px; margin:0 auto;}
+
+/*헤더*/
+header{
+	text-align:center; 
+	position:relative; height:200px;
+}
+header>h1 img{
+	width:50px;
+	margin:20px 0;
+}
+#util>ul{
+	position:absolute; 
+	right:10px; top:50px;
+}
+#util>ul>li{
+	float:left; 
+	font-size:0.8em;
+}
+#util>ul>li>a{
+	color:#666; 
+	padding:20px; 
+	display:block;
+}
+#gnb>ul>li{
+	width:200px;
+	text-align:center;
+	float:left;
+	margin-top:40px;
+}
+#gnb>ul>li>a{
+	width:60px;
+	margin:0 auto 10px; padding:10px;
+	display:block;
+	font-weight:700;
+}
+#gnb>ul>li:hover>a{
+	color:#37c6dd;
+	border-bottom:3px solid #37c6dd;
+	padding:10px 30px; transition:padding 0.3s;
+}
+/*컨텐츠*/
+section{margin-bottom:100px;}
+section#fourth{margin-bottom:60px;}
+/*비주얼 베너*/
+#visual{
+	height:500px;
+	overflow:hidden;
+}
+#visual>h2{
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+	visibility:hidden;
+	display:none;
+}
+#visual img{width:1200px}
+/*원형 컨텐츠 영역*/
+.con{position:relative;}
+#first{
+	height:500px;
+	background:url('../images/brand.png') 0 0 no-repeat;
+}
+
+#first>div{
+	width:420px; height:150px;
+	background:rgba(255,255,255,.5);
+	padding:20px;
+	position:absolute;
+	left:50%; top:50px;
+}
+#first>div>p{
+	line-height:2;
+	font-size:0.9em;
+}
+#first>div>h2{
+	font-size:1.5em;
+	color:#78b3c5;
+	margin-bottom:20px;
+}
+#first mark{background:rgb(229,243,246);}
+#first mark:hover{background:rgb(200,243,246);}
+#first>img{position:absolute; bottom:30px;}
+#first>img:hover{transform:scale(1.1,1.1); transition:0.5s;}
+#first>img:nth-of-type(1){right:220px;}
+#first>img:nth-of-type(2){right:20px;}
+
+#second{height:330px;}
+#second h2{
+	font-size:4em;
+	font-weight:bold;
+	color:#78b3c5;
+	line-height:1.2;
+	letter-spacing:-4px;
+}
+#second>div>p{
+	color:#aaa;
+	line-height:2;
+	margin:20px 0 30px;
+}
+#second>div a{
+	color:#78b3c5;
+	padding:10px 40px;
+	font-weight:bold;
+	border:2px solid #78b3c5;
+}
+#second>div a:hover{
+	color:#fff;
+	background:#78b3c5;
+}
+#second>ul{position:absolute; right:0; top:0;}
+#second>ul>li{
+	float:left;
+	margin-right:10px;
+}
+#second>ul>li:last-child{margin-right:0;}
+
+#third h2{font-size:1.8em; margin-bottom:20px; font-weight:bold;}
+#third h3{font-size:1.2em; margin-bottom:10px; color:#236680; font-weight:bold;}
+#third>div:first-child>p{font-size:0.9em; line-height:2;}
+#third p{font-size:0.8em; line-height:2;}
+#third>div>div{position:absolute; width:1000px; height:514px;}
+.third>div>div{
+	border-left:5px solid #78b3c5;
+	margin-top:130px; padding:40px 15px;
+}
+#third>div:first-child{text-align:center;}
+#third>div>div:first-child{
+	background:url('../images/story_1.png') 486px 0 no-repeat;
+	top:120px; right:0;
+}
+.third>div:last-child>div{
+	border-right:5px solid #78b3c5;
+	border-left:0;
+	text-align:right; 
+	margin-top:200px;
+}
+#third>div:last-child{height:950px;}
+#third>div>div:last-child{
+	background:url('../images/story_2.png') 0 0 no-repeat;
+	bottom:0; left:0;
+}
+
+#fourth{margin-bottom:60px;}
+#fourth>div{text-align:center;}
+#fourth h2{font-size:1.8em; font-weight:bold;}
+#fourth p{font-size:0.9em; line-height:2; margin:20px;}
+#fourth span{color:#78b3c5;}
+#fourth>ul>li{float:left; margin-right:50px; position:relative;}
+#fourth>ul>li>img{width:200px;}
+#fourth>ul>li:last-child{margin-right:0px;}
+#fourth>ul>li>div{
+	width:200px; height:200px; 
+	background:rgba(0,0,0,.5); 
+	visibility:hidden;
+	position:absolute;
+	top:0; right:0;
+}
+#fourth>ul>li>div>a{
+	position:absolute;
+	right:50%; bottom:50%; transform:translate(50%,50%);
+	border:1px solid #fff; color:#fff;
+	padding:10px 20px;
+}
+#fourth>ul>li:hover>div{visibility:visible;}
+
+/*푸터*/
+footer{
+	width:100%; height:300px;
+	margin:0 auto;
+	text-align:center; color:#666;
+	position:relative;
+	background:#deeff6;
+}
+.footer_menu{
+	width:496px; 
+	position:absolute; 
+	right:50%; transform:translateX(50%);
+}
+.footer_menu li{float:left; padding:30px;}
+footer>address{
+	font-size:0.9em; line-height:2;
+	padding-top:70px;
+}
+.sns{
+	width:220px; 
+	position:absolute; 
+	right:50%; bottom:50px;	transform:translateX(50%);
+}
+.sns li{float:left; padding:10px;}

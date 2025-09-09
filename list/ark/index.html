@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <title>ARC'TERYX</title>
+    <link rel="stylesheet" href="./css/jquery-ui.css" type="text/css" />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+<script>
+$(function(){
+    $(".selbox").selectmenu();
+});
+$(function(){
+    $("#selectable").selectable();
+});
+</script>
+</head>
+<body>
+<header class="wrap">
+    <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="logo"/></a></h1>
+    <nav id="gnb">
+        <ul>
+            <li><a href="#">남성</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">여성</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">EXPLORE</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">활동별 분류</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">SHOP MORE</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </a></li>
+        </ul>
+    </nav>
+    <div class="util">
+        
+    </div>
+</header>
+<section id="m_banner">
+    <h2>메인베너 영역</h2>
+    <img src="images/m_bnr.jpg" alt="main banner">
+    <div>
+        <h4>fall 2021 lookbook</h4>
+        <p>캐나다의 개척정신으로<br/>주변 환경과 끊임없이<br/>소통해 나간다.</p>
+    </div>
+</section>
+<section id="product">
+    <h2>제품 영역</h2>
+    <div>
+    <div>
+        <h3>focus now</h3>
+        <ul id="p_list" class="clear">
+            <li class="pdt_tit">
+                <img src="./images/b_p_1.png" alt="">
+                <p>[FW21] 시타 팬츠 여성</p>
+            </a></li>
+            <li class="pdt_tit">
+                <img src="./images/b_p_2.png" alt="">
+                <p>[FW21] 마카이 LT 재킷 남성</p>
+            </a></li>
+            <li class="pdt_tit">
+                <img src="./images/b_p_3.png" alt="">
+                <p>[FW21] 아카이브 티셔츠 SS 여성</p>
+            </a></li>
+            <li class="pdt_tit">
+                <img src="./images/b_p_4.png" alt="">
+                <p>[FW21] 알파 SV T-셔츠 남성</p>
+            </a></li>
+            <li class="pdt_tit">
+                <img src="./images/b_p_5.png" alt="">
+                <p>[FW21] 아톰 SL 베스트 남성</p>
+            </a></li>
+            <li class="pdt_tit">
+                <img src="./images/b_p_6.png" alt="">
+                <p>[FW21] 메리노 울아리트 웨이트 3/4크루 앙말(MACRO)</p>
+            </a></li>
+        </ul>
+    </div>
+    </div>
+</section>
+<section id="search">
+    <h2>검색영역</h2>
+    <h3>search</h3>
+    <form>
+    <div class="name">
+        <h5>상품명</h5>
+        <input type="search" value="검색어 입력"/>
+        <ul class="clear">
+            <li><a href="#">후리스</a></li>
+            <li><a href="#">트레이닝자켓</a></li>
+            <li><a href="#">여름점퍼</a></li>
+            <li><a href="#">반팔티</a></li>
+            <li><a href="#">기능성</a></li>
+        </ul>
+    </div>
+    <div>
+        <h5>카테고리</h5>
+        <select class="category">
+            <option value="top"><span class="ui-icon-script"></span>상의</option>
+            <option value="pants">하의</option>
+            <option value="accessory">액세서리</option>
+        </select>
+    </div>
+    <div>
+        <h5>용도</h5>
+        <select class="use">
+            <option value="trip"><span class="ui-icon-script"></span>여행</option>
+            <option value="field">스포츠</option>
+            <option value="exercise">운동</option>
+            <option value="outdoor">아웃도어</option>
+        </select>
+    </div>
+    <div>
+        <h5>색상</h5>
+        <div id="selectable" class="clear">
+            <input type="radio" name="color"/> 
+            <input type="radio" name="color"/> 
+            <input type="radio" name="color"/> 
+            <input type="radio" name="color"/> 
+            <input type="radio" name="color"/> 
+            <input type="radio" name="color"/> 
+            <input type="radio" name="color"/> 
+        </div>
+    </div>
+    <input type="submit" value="검색하기" class="submit"/>
+    </form>
+</section>
+<section id="best">
+    <h2>인기상품 영역</h2>
+    <h3>best production</h3>
+    <ul id="b_list" class="clear">
+        <li><a href="#">
+            <img src="./images/pdt1.png" alt="">
+            <div>best1</div>
+        </a></li>
+        <li><a href="#">
+            <img src="./images/pdt2.png" alt="">
+            <div>best2</div>
+        </a></li>
+        <li><a href="#">
+            <img src="./images/pdt3.png" alt="">
+            <div>best3</div>
+        </a></li>
+        <li><a href="#">
+            <img src="./images/pdt4.png" alt="">
+            <div>best4</div>
+        </a></li>
+        <li><a href="#">
+            <img src="./images/pdt5.png" alt="">
+            <div>best5</div>
+        </a></li>
+        <li><a href="#">
+            <img src="./images/pdt6.png" alt="">
+            <div>best6</div>
+        </a></li>
+    </ul>
+</section>
+<section id="lower_bnr">
+    <div>
+        <div><a href="#">
+            <p>men's</p>
+            <p>new design</p>
+        </a></div>
+        <div><a href="#">
+            <p>women's</p>
+            <p>new design</p>
+        </a></div>
+    </div>
+</section>
+<footer>
+    <ul class="clear">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">배송현황</a></li>
+        <li><a href="#">반품·환불</a></li>
+        <li><a href="#">1:1문의</a></li>
+        <li><a href="#">Who Are We</a></li>
+        <li><a href="#">Sustainability</a></li>
+    </ul>
+    <address>(주)넬슨스포츠 | 대쵸자 : 정호진 | 주소 : 경기도 고양시일산동구 호수로 358-39 (동문타워I) 710호, 711호, 712호 | 전화 : 1644-1708<br/>사업자 등록번호 : 128-81-33017 | 통신판매신고번호 : 2014-고양일산동-0765 | 개인정보보호책입자 변영미 (info@nelson.co.kr)</address>
+    <a href="#"><p>개인정보취급방침 | 이용약관</p></a>
+</footer>
+<script src="./js/script.js"></script>
+</body>
+</html>

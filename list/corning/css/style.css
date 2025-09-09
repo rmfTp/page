@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "common.css";
+/*공통 사용*/
+a,a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+	color:#666;
+}
+.inner{width:1200px; margin:0 auto; 
+	position:relative;}
+.clear::after{
+	content:''; display:block; clear:both; width:0; height:0; visibility:hidden;
+}
+
+header>div nav{float:right;}
+header>div>nav li{float:left;}
+header>div>nav li a{
+	display:block;
+	padding:20px;
+}
+header nav:nth-of-type(1){
+	margin:0 140px 5px;
+}
+header h1{margin:50px 140px 0 0;}
+.topright{
+	position:absolute;
+	right:0;
+	border-left:1px solid #ddd;
+}
+.topright>a{
+	display:block;
+	padding:20px 30px 10px;
+}
+section{
+	min-height:670px;
+	font-size:14px;
+}
+.visual_wrap{
+	position:relative;
+	margin:0 auto;
+	max-width:1920px;
+	height:496px;
+}
+.visual_img{
+	position:absolute;
+	top:0; left:50%; 
+	transform:translateX(-50%)
+}
+.visual_wrap>a{
+	position:absolute;
+	width:31px; height:52px;
+	overflow:hidden;
+	text-indent:-99999px;
+	top:50%; transform:translateY(-50%);
+}
+a.btn_prev{background:url('../images/icon_ar_l.png'); left:20px;}
+a.btn_next{background:url('../images/icon_ar_r.png');right:20px;}
+.link_wrap{padding:40px 0 50px;}
+.link_wrap ul li{
+	float:left; 
+	width:400px; height:90px;
+	padding:20px 0 0 100px;
+	background:url() 0 0;
+}
+.link_wrap ul li:nth-child(1){background:url('../images/link-thum01.png') no-repeat;}
+.link_wrap ul li:nth-child(2){background:url('../images/link-thum02.png') no-repeat;}
+.link_wrap ul li:nth-child(3){background:url('../images/link-thum03.png') no-repeat;}
+.link_wrap ul li dt{color:navy; font-weight:bold}
+.link_wrap ul li dd{line-height:1.2; margin-top:10px; color:#666;}
+footer{padding-top:40px;}
+footer>div.inner{width:800px;}
+.foot_logo{position:absolute; left:0; margin-top:5px;}
+.foot_con{
+	width:550px; 
+	position:absolute; 
+	right:0;
+}
+.foot_con>ul>li{float:left;}
+.foot_con>ul>li>a{
+	display:block;
+	padding:0 10px;
+	border-right:1px solid #666;
+}
+.foot_con>ul>li:last-child>a{border:0;}
+.foot_con>ul>li:first-child>a{padding-left:0;}
+.foot_con>p{margin-top:15px; font-size:.8em;}

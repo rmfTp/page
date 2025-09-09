@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>   
+	<meta name="description" content=""/>
+	<meta name="keywords" content="" />
+	<meta name="author" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+	<meta charset="utf-8" />
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<title>KCC</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+	<script>
+	$(document).ready(function(){
+		$("#gnb>li").hover(function(){
+			$(this).children(".submenu").stop().slideDown(200);
+			$(this).children(".submenu").css({"background":"#37466c"});
+		},function(){
+			$(this).children(".submenu").stop().slideUp(300);	
+			$(this).children(".submenu").css({"background":"#1c4199"});
+		});
+	});
+	</script>
+</head>
+<body>
+<header>
+<h1><a href="./review17.html"><img src="./images/logo.png" alt="" id="logoImg"></a></h1>
+<h2>메인네비게이션</h2>
+<nav>
+	<ul id="gnb" class="clear">
+		<li><a href="#">KCC소개</a>
+			<ul class="submenu">
+				<li><a href="#">회사개요</a></li>
+				<li><a href="#">경영이념</a></li>
+				<li><a href="#">KCC네트워크</a></li>
+			</ul>
+		</li><li><a href="#">제품</a>
+			<ul class="submenu">
+				<li><a href="#">도료</a></li>
+				<li><a href="#">유리</a></li>
+				<li><a href="#">바닥재</a></li>
+				<li><a href="#">내외장재</a></li>
+				<li><a href="#">보온단열재</a></li>
+			</ul>
+		</li><li><a href="#">R&#38;D</a></li>
+		<li><a href="#">사회공헌</a></li>
+		<li><a href="#">고객지원</a>
+			<ul class="submenu">
+				<li><a href="#">대리점안내</a></li>
+				<li><a href="#">담당자안내</a></li>
+				<li><a href="#">그린리모델링</a></li>
+				<li><a href="#">1:1문의</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</header>
+<section id="bnr">
+<h2>상단 베너</h2>
+<img src="./images/banner.jpg"/>
+</section>
+<div class="rl clear">
+<section id="LNB">
+<h3>(주)KCC</h3>
+<ul class="lnb_menu">
+	<li><a href="#">회사개요</a></li>
+	<li><a href="#">회사연혁</a></li>
+	<li><a href="#">찾아오시는 길</a></li>
+</ul>
+</section>
+<section id="detail">
+<h2>인사말</h2>
+<p>안녕하십니까?</p>
+<p>'더 좋은 삶을 위한 가치창조'라는 경영이념 아래, 저희 KCC는 사회, 고객, 주주, 기업구성원 모두가 만족할 수 있는 가치경영, 창조경영, 신뢰경영, 환경친화적 경영을 추구하는데 역점을 두고 있습니다. 고객 여러분의 신뢰를 바탕으로 초일류 정밀화학분야의 창조적인 리더로서 세계시장의 변화와 큰 흐름을 주도하며, 과감하고 혁신적인 연구 개발로 '신소재 Creator'로서 기업의 비전을 실현해 나갈 것입니다.</p>
+<p class="clear">대표이사 : 홍길동</p>
+<ul class="dtl_menu">
+	<li>
+		<p>설립일</p>
+		<p>1958년 8월 12일</p>
+	</li>
+	<li>
+		<p>대표이사</p>
+		<p>홍길동</p>
+	</li>
+	<li>
+		<p>매출액</p>
+		<p>3,347,336(2018년 기준 / 단위 : 백만원)</p>
+	</li>
+	<li>
+		<p>R&#38;D</p>
+		<p>1,707억원(매출 대비 18.6&#37;</p>
+	</li>
+	<li>
+		<p>임직원수</p>
+		<p>5,230명</p>
+	</li>
+</ul>
+</section>
+</div>
+<footer>
+<address>주소:서울특별시 서초구 사평대로 344 | 대표번호 02-3480-5000</address>
+<p>copyright &copy; 2017 KCC All Right Reserved</p>
+</footer>
+</body>
+</html>

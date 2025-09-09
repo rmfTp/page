@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import url('animate.css');
+*{margin:0; padding:0;}
+li{list-style:none;}
+img{border:none; vertical-align:top;}
+.clear::after{
+	content:''; display:block; clear:both; width:0; height:0; visibility:hidden;
+}
+a{text-decoration:none;}
+a:link{color:#666;}
+a:visited{color:#666;}
+a:hover{color:#fc6;}
+a:active{color:#666;}
+
+.wrap{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+section>h2{
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+	visibility:hidden;
+	display:none;
+}
+body{font-size:14px; color:#666;}
+
+header{padding:20px 0 10px;}
+header>p{
+	position:absolute;
+	right:0;
+	bottom:30px;
+	color:navy;
+}
+
+#visual{
+	padding:40px 0;
+	background:url('../images/bg.png');
+}
+#visual figure{
+	cursor:pointer;
+	overflow:hidden;
+}
+#visual figure:nth-child(2){
+	position:absolute;
+	right:0; top:0;
+}
+#visual figure:nth-child(3){
+	position:absolute;
+	right:0; bottom:0;
+}
+#visual figure:nth-child(1) figcaption{
+	position:absolute;
+	height:332px;
+	padding:30px;
+	left:0; bottom:-100%;
+	background:rgba(0,0,0,.4);
+	color:#fff;
+}
+#visual figure:nth-child(1):hover figcaption{bottom:0;
+	transition:all .5s;
+}
+#visual figure:nth-child(1) figcaption p{margin:10px 0;}
+#visual figure:nth-child(1) figcaption>h3{
+	font-size:2.1em;
+}
+#visual figure:nth-child(2) figcaption{
+	position:absolute;
+	left:0; top:-100%;
+	background:rgba(255,255,255,0.3);
+	color:#000;
+	width:268px;
+	padding:10px;
+	height:40px;
+}
+#visual figure:nth-child(2):hover figcaption{
+	top:40%;
+	transition:all .5s;
+}
+#visual figure:nth-child(2) figcaption>p:first-child{
+	font-size:1.2rem; font-weight:bold;
+}
+#visual figure:nth-child(2) figcaption>p:last-child{
+	color:#333; float:right;
+}
+#line_banner{background:#333;}
+#line_banner img{display:block;}
+#line_banner p:nth-of-type(1){
+	position:absolute;
+	left:342px; top:35px;
+	font-weight:bold;
+	color:#fff;
+	font-size:1.5rem
+}
+#line_banner p:nth-of-type(2){
+	position:absolute;
+	right:10px; top:25px;
+	font-weight:bold;
+	color:#fff;
+	font-size:1.2rem
+}
+#line_banner p:nth-of-type(3){
+	position:absolute;
+	right:10px; top:60px;
+	font-weight:bold;
+	color:#fff;
+	font-size:0.8rem;
+}
+.title{
+	font-size:16px;
+	background:url('../images/bg2.png') repeat-x;
+	margin-bottom:25px;
+}
+.title>span{background:#fff; padding-right:15px;}
+
+#gallery{
+	padding:40px 0;
+	border-bottom:1px solid #ccc;
+	background:#f3f3f3;
+}
+#gallery span{background:#f3f3f3;}
+#gallery ul>li{
+	float:left;
+	margin:0 45px 20px 0;
+}
+#gallery ul>li:nth-child(3n+2){margin-right:0;}
+#gallery ul>li p{
+	width:290px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	
+}
+#gallery ul::after{
+	content:''; display:block; clear:both; width:0; height:0; visibility:hidden;
+}
+#gallery ul li:hover img{
+	filter:grayscale(80%);
+	transform:rotateX(360deg);
+	transition:all .5s;
+}
+#latest{padding:40px 0;}
+#latest article{padding-bottom:60px;}
+#latest article>div{float:left;}
+
+#latest article>div:first-child{
+	width:610px;
+	margin-right:40px;
+	overflow:hidden;
+}
+#latest article>div:first-child div{
+	position:relative;
+	margin-bottom:5px;
+}
+#latest article>div:first-child div dl{
+	position:absolute;
+	left:160px; top:3px;
+}
+#latest article>div:first-child div dl dt{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+#latest article>div:first-child div dl dd{
+	line-height:1.5; font-size:12px;
+}
+#latest{padding:40px 0;}
+#latest article{padding-bottom:60px;}
+#latest article>div{float:left;}
+
+#latest article>div:last-child{
+	width:290px;
+}
+#latest article>div:last-child figure{
+	position:relative;
+}
+#latest article:first-child>div:last-child figcaption{
+	position:absolute;
+	background:rgba(0,0,0,0.8);
+	padding:10px 10px; 
+	color:#fff;
+	bottom:0px; left:0;
+}
+#latest article:last-child>div:last-child figcaption{
+	position:absolute;
+	background:rgba(0,0,0,0.8);
+	padding:10px 10px; 
+	color:#fff;
+	top:0px; left:0;
+}
+
+#bnr{background:#f1f1f1; text-align:center;}
+
+footer{padding:20px 0;}
+footer address{font-style:nomal;}
+.top_btn{
+	background:steelblue;
+	color:#fff;
+	position:fixed;
+	bottom:0;
+	right:10%;
+	padding:20px;
+	font-size:2rem;
+	border-radius:30px 30px 0 0;
+	cursor:pointer;
+}

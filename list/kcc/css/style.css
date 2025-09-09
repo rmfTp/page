@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+*{margin:0; padding:0;}
+ul, li, ol{list-style:none;}
+body{width:1100px; margin:0 auto;}
+#logoImg{width:100px;}
+h1{text-align:center;}
+h2{
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+	visibility:hidden;
+	display:none;
+}
+a,a:link,a:visited,a:hover,a:active{text-decoration:none; color:#f1f1f1;}
+.clear::after{
+	content:''; display:block; clear:both; width:0; height:0; visibility:hidden;
+}
+
+#gnb{position:relative; width:100%;}
+#gnb>li{
+	float:left; 
+	width:220px; height:50px;
+	background:#1c4199;
+	line-height:50px;
+	text-align:center;
+}
+#gnb>li:hover{
+	background:#37466c;
+}
+#gnb a{font-size:1.2em; font-weight:700;}
+#gnb>li>a, .submenu>li>a{
+	width:100%;
+	display:block;
+	height:50px; line-height:50px; 
+}
+.submenu{
+	display:none; width:220px;
+	position:absolute; top:50px;
+}
+.submenu>li:hover{background:#2c719d;}
+#bnr{height:490px;}
+#bnr>img{width:100%;}
+
+.rl>section{float:left; height:330px;}
+
+#LNB{
+	width:200px; border:1px solid #ccc;
+	text-align:center;
+	box-sizing:border-box;
+}
+#LNB>h3{
+	height:60px; line-height:62px;
+	background:#333; color:#f1f1f1;
+	font-size:1.5em;
+	font-weight:700px;
+}
+.lnb_menu>li{
+	width:200px; height:45px;
+	line-height:45px;
+	border-bottom:1px solid #ccc;
+}
+.lnb_menu a{
+	color:#333;
+}
+
+#detail{
+	width:900px; 
+	border:1px solid #ccc;
+	border-left:0;
+	box-sizing:border-box;
+}
+#detail>p{padding:5px 20px;}
+#detail>p:nth-of-type(1){
+	color:#2c719d;
+	font-size:21px;
+	margin-top:25px;
+}
+#detail>p:nth-of-type(2){
+	color:#333; font-size:13.4px;
+	line-height:1.7; color:#666;
+}
+#detail>p:nth-of-type(3){
+	text-align:right;
+	color:#000; font-size:15px;}
+.dtl_menu{position:relative;}
+.dtl_menu p{position:absolute;}
+.dtl_menu>li>p:first-child{left:20px;}
+.dtl_menu>li>p:last-child{left:120px; color:#666;}
+.dtl_menu>li:nth-child(1)>p{top:0;}
+.dtl_menu>li:nth-child(2)>p{top:30px;}
+.dtl_menu>li:nth-child(3)>p{top:60px;}
+.dtl_menu>li:nth-child(4)>p{top:90px;}
+.dtl_menu>li:nth-child(5)>p{top:120px;}
+footer{
+	text-align:center; 
+	background:#eee; color:#333;
+	padding:20px;
+	border:1px solid #ccc;
+	border-top:0; margin-bottom:10px;
+}
+footer>address{margin:10px auto; font-size:13px;} 
+footer>p{
+	margin:10px auto;
+	font-size:12px;
+	color:#666;
+}

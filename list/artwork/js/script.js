@@ -1,0 +1,22 @@
+$(document).ready(function(){
+	setInterval(function(){
+		$("#slide").animate({
+			"margin-top":"-350px"
+		},function(){
+			$("#slide>li:first-child").appendTo("#slide");
+			$("#slide").css({"margin-top":"0px"});
+		});
+	},2600);
+	$(".pu").click(function(){
+		$(".popup,.gray").show();
+		return false
+	})
+	$(".popup>button").click(function(){
+		$(".popup,.gray").fadeOut();
+	});
+	$("#gnb>li").hover(function(){
+		$(this).children(".sub_menu").stop().slideDown(200);
+	},function(){
+		$(this).children(".sub_menu").stop().slideUp(50);
+	});
+});
